@@ -1,0 +1,45 @@
+{
+
+  "curriculos": [
+    {
+      "id": "1",
+      "nome": "Joaquim Bezerra",
+      "email": "joaquimbezerra@email.com",
+      "telefone": 19562688656,
+      "cidade": "Americana",
+      "estado": "São Paulo",
+      "resumo_profissional": "Já trabalhei em várias empresas internacionais, me formei na usp e sou fluente em inglês",
+      "vaga_interesse": "Desenvolvedor"
+    },
+    {
+      "id": "2",
+      "nome": "Mariana Silva",
+      "email": "mariana.silva@email.com",
+      "telefone": 11988887777,
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "resumo_profissional": "Especialista em análise de dados com 4 anos de experiência no setor financeiro. Domínio avançado em Python, SQL e visualização de dados com Power BI.",
+      "vaga_interesse": "Analista de Dados"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Eduardo Santos",
+      "email": "carlos.santos@email.com",
+      "telefone": 21977776666,
+      "cidade": "Rio de Janeiro",
+      "estado": "Rio de Janeiro",
+      "resumo_profissional": "Gerente de Projetos certificado PMP com sólida experiência em liderança de times multidisciplinares de tecnologia utilizando Scrum e Kanban.",
+      "vaga_interesse": "Gerente de Projetos"
+    },
+    {
+      "id": "4",
+      "nome": "Amanda Souza",
+      "email": "amanda.souza@email.com",
+      "telefone": 31966665555,
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais",
+      "resumo_profissional": "Designer UX/UI focada em criar experiências digitais acessíveis e intuitivas. Experiência com Figma, criação de wireframes e testes de usabilidade.",
+      "vaga_interesse": "Designer UX/UI"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<h2>Enviar Curriculo</h2>
+
+<!-- criando o formulario de envio de curriculo -->
+<form action="">
+  <label for="">ID</label>
+  <input type="text" [(ngModel)]="curriculo.id" name="id">
+  <br>
+  <label for="">Nome</label>
+  <input type="text" [(ngModel)]="curriculo.nome" name="nome">
+  <br>
+  <label for="">Email</label>
+  <input type="email" [(ngModel)]="curriculo.email" name="email">
+  <br>
+  <label for="">Telefone</label>
+  <input type="tel" [(ngModel)]="curriculo.telefone" name="telefone">
+  <br>
+  <label for="">Cidade</label>
+  <input type="text" [(ngModel)]="curriculo.cidade" name="cidade">
+  <br>
+  <label for="">Estado</label>
+  <input type="text" [(ngModel)]="curriculo.estado" name="estado">
+  <br>
+  <label for="">Resumo Profissional</label>
+  <input type="text" [(ngModel)]="curriculo.resumo_profissional" name="resumo_profissional">
+  <br>
+  <label for="">Vaga de Interesse</label>
+  <input type="text" [(ngModel)]="curriculo.vaga_interesse" name="vaga_interesse">
+  <br>
+
+  <button type="button" (click)="cadastrarCurriculos()">Cadastrar Vaga</button>
+
+</form>
