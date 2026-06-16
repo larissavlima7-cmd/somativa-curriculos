@@ -1,32 +1,42 @@
-<h2>Enviar Curriculo</h2>
+<div class="formulario-container">
+  <h2>Envie seu curriculo!!</h2>
 
-<!-- criando o formulario de envio de curriculo -->
-<form action="">
-  <label for="">ID</label>
-  <input type="text" [(ngModel)]="curriculo.id" name="id">
-  <br>
-  <label for="">Nome</label>
-  <input type="text" [(ngModel)]="curriculo.nome" name="nome">
-  <br>
-  <label for="">Email</label>
-  <input type="email" [(ngModel)]="curriculo.email" name="email">
-  <br>
-  <label for="">Telefone</label>
-  <input type="tel" [(ngModel)]="curriculo.telefone" name="telefone">
-  <br>
-  <label for="">Cidade</label>
-  <input type="text" [(ngModel)]="curriculo.cidade" name="cidade">
-  <br>
-  <label for="">Estado</label>
-  <input type="text" [(ngModel)]="curriculo.estado" name="estado">
-  <br>
-  <label for="">Resumo Profissional</label>
-  <input type="text" [(ngModel)]="curriculo.resumo_profissional" name="resumo_profissional">
-  <br>
-  <label for="">Vaga de Interesse</label>
-  <input type="text" [(ngModel)]="curriculo.vaga_interesse" name="vaga_interesse">
-  <br>
+  <form #formCurriculo="ngForm">
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" [(ngModel)]="curriculo.nome" name="nome">
+    </div>
 
-  <button type="button" (click)="cadastrarCurriculos()">Cadastrar Vaga</button>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="curriculo.email" name="email">
+    </div>
 
-</form>
+    <div class="form-group">
+      <label>Telefone</label>
+      <input type="tel" [(ngModel)]="curriculo.telefone" name="telefone">
+    </div>
+
+    <div class="form-group">
+      <label>Cidade</label>
+      <input type="text" [(ngModel)]="curriculo.cidade" name="cidade">
+    </div>
+
+    <div class="form-group">
+      <label>Estado</label>
+      <input type="text" [(ngModel)]="curriculo.estado" name="estado">
+    </div>
+
+    <div class="form-group">
+      <label>Resumo Profissional</label>
+      <input type="text" [(ngModel)]="curriculo.resumo_profissional" name="resumo_profissional">
+    </div>
+
+    <div class="form-group">
+      <label>Vaga de Interesse</label>
+      <input type="text" [(ngModel)]="curriculo.vaga_interesse" name="vaga_interesse">
+    </div>
+
+    <button type="button" (click)="cadastrarCurriculos(formCurriculo)">Cadastrar Curriculo</button>
+  </form>
+</div>

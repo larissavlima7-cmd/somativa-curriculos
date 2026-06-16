@@ -1,0 +1,35 @@
+.listar-curriculos {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  // O "table" agora aceita tanto a tag pura quanto a classe ".table"
+  table,
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    th,
+    td {
+      padding: 12px 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+  }
+
+  // Como você tirou a classe antiga da TD, podemos aplicar o limite
+  // direto na 7ª coluna (Resumo Profissional) para o texto não esticar
+  td:nth-child(7) {
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+}

@@ -1,1 +1,34 @@
-<p>todos-curriculos works!</p>
+<h2>Currículos Cadastrados</h2>
+
+<section class="listar-curriculos container-curriculos">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>Resumo Profissional</th>
+        <th>Vaga de Interesse</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (curriculo of curriculos; track curriculo.id){
+        <tr>
+          <td>{{curriculo.id}}</td>
+          <td>{{curriculo.nome}}</td>
+          <td>{{curriculo.email}}</td>
+          <td>{{curriculo.telefone}}</td>
+          <td>{{curriculo.cidade}}</td>
+          <td>{{curriculo.estado}}</td>
+          <td class="coluna-resumo">{{curriculo.resumo_profissional}}</td>
+          <td>{{curriculo.vaga_interesse}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</section>
+
+

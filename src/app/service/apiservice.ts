@@ -9,7 +9,7 @@ import { Curriculo } from '../model/curriculo.model';
 })
 export class Apiservice {
   //caminho para API que colocamos lá na pasta backend no arquivo db.json
-  private apiUrl = 'http://localhost:3022/vagas';
+  private apiUrl = 'http://localhost:3022/curriculos';
 
   constructor(private http: HttpClient) {}//para na hora do cadastro de um novo curriculo ele aparecer na nossa api, ou seja, no arquivo db.json
 
@@ -21,19 +21,19 @@ export class Apiservice {
   }
 
   //post- para adicionar curriculos
-  postCurriculos(curriculo:Curriculo): Observable<Curriculo[]>{
-    return this.http.post<Curriculo[]>(this.apiUrl, curriculo); //depois que criamos, ele vai passar o link da api e do obj
+  postCurriculos(curriculo:any): Observable<any>{
+    return this.http.post<any>(this.apiUrl, curriculo); //depois que criamos, ele vai passar o link da api e do obj
   }
 
   //put- para fazer alterações nos curriculos
-  putCurriculos(id: any, curriculo: Curriculo): Observable<Curriculo[]>{ //vai precisar passar o id, para modificar exatamente o curriculo que queremos
+  putCurriculos(id: any, curriculo: any): Observable<any>{ //vai precisar passar o id, para modificar exatamente o curriculo que queremos
     const urlUpdate = `${this.apiUrl}/${id}`; //com o id informado ele vai adicionar ao link para modificar apenas aquele curriculo
-    return this.http.put<Curriculo[]>(urlUpdate, curriculo);
+    return this.http.put<any>(urlUpdate, curriculo);
   }
 
   //delete- para apagar um curriculo
-  deleteCurriculos(id:any):Observable<Curriculo[]> {//também é necessário passar o id para não correr o risco de excluir outro curriculo, por isso também terá o link da api com o id na frente (http://localhost:3022/vagas/id)
+  deleteCurriculos(id:any):Observable<any> {//também é necessário passar o id para não correr o risco de excluir outro curriculo, por isso também terá o link da api com o id na frente (http://localhost:3022/vagas/id)
     const urlDelete= `${this.apiUrl}/${id}`;
-    return this.http.delete<Curriculo[]>(urlDelete);
+    return this.http.delete<any>(urlDelete);
   }
 }

@@ -5,7 +5,7 @@ export class Curriculo {
     public id: number,
     public nome: string,
     public email: string,
-    public telefone: number,
+    public telefone: string,
     public cidade: string,
     public estado: string,
     public resumo_profissional: string,

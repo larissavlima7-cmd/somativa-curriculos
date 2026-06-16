@@ -1,59 +1,43 @@
-# SomativaCurriculos
+# Especificação de Requisitos de Software (SRS)
+**Projeto:** Plataforma RH
+**Versão:** 1.0
+**Data:** 2 de Junho de 2026
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+## 1. Introdução
+### 1.1 Propósito
+Este documento descreve os requisitos funcionais e não funcionais para o Módulo de Currículos e Vagas da Plataforma de RH. O objetivo deste módulo é permitir que candidatos gerenciem suas informações profissionais e que a administração visualize esses dados.
 
-## Development server
+### 1.2 Escopo
+O sistema compreende o desenvolvimento de uma interface frontend em Angular integrada a um backend simulado (json-server). As funcionalidades incluem o CRUD completo de currículos, vinculação de dados por ID de usuário e interface administrativa para gestão.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 2. Descrição Geral
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 3. Requistos do Sistema 
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 3.1 Requistos Funcionais (RF)
 
-```bash
-ng generate component component-name
-```
+### 3.2 Requsitos Não-Funcionais (RNF)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 4. Interface de Dados e Modelagem do Sistema
 
-```bash
-ng generate --help
-```
+### 4.1 Diagramas
 
-## Building
+#### 4.1.1 Diagrama de Uso
 
-To build the project run:
+#### 4.1.2 Diagrama de Classe
 
-```bash
-ng build
-```
+#### 4.1.1 Diagrama de Fluxo
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 5. Critérios de Aceitação
 
-## Running unit tests
+1.  **Operação CRUD:** É possível criar, ler, atualizar e excluir um registro no `db.json` através da interface?
+2.  **Navegação:** As rotas configuradas levam aos componentes corretos sem erros de console?
+3.  **Feedback:** O usuário recebe uma confirmação (ex: MatSnackBar) ao salvar um currículo?
+4.  **Consistência:** Os dados exibidos na listagem correspondem exatamente ao que está no backend simulado?
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 6. Configuração do Ambiente
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

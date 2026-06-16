@@ -1,5 +1,4 @@
 {
-
   "curriculos": [
     {
       "id": "1",
@@ -40,6 +39,37 @@
       "estado": "Minas Gerais",
       "resumo_profissional": "Designer UX/UI focada em criar experiências digitais acessíveis e intuitivas. Experiência com Figma, criação de wireframes e testes de usabilidade.",
       "vaga_interesse": "Designer UX/UI"
+    },
+    {
+      "nome": "Larissa",
+      "email": "larisa@email.com",
+      "telefone": "19999999999",
+      "cidade": "Americana",
+      "estado": "São Paulo",
+      "resumo_profissional": "rygredfhgtrdfh",
+      "vaga_interesse": "yyfjfg",
+      "id": "T2RoWlh3z1Q"
+    },
+    {
+      "nome": "Maria",
+      "email": "maria@email.com",
+      "telefone": "78987457416",
+      "cidade": "Ubatuba",
+      "estado": "São Paulo",
+      "resumo_profissional": "etreasrygtwesdyrfdh",
+      "vaga_interesse": "tersgdzf",
+      "id": "zk0pbwoxGw0"
+    },
+    {
+      "nome": "Otávio",
+      "email": "otavio@email.com",
+      "telefone": "94158796548",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "resumo_profissional": "pklojhgfdxfxrrdgbfgcgjuygkh",
+      "vaga_interesse": "iukjujgdh",
+      "id": "_d9r83QriDc"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
