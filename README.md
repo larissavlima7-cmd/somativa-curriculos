@@ -13,11 +13,25 @@ O sistema compreende o desenvolvimento de uma interface frontend em Angular inte
 ---
 
 ## 2. Descrição Geral
+A plataforma é dividida em duas visões principais:
 
+  1. Visão do Candidato: Formulário de inscrição de currículo e mural de vagas disponíveis.
+
+  2. Visão Administrativa (Painel): Gerenciamento operacional das vagas (cadastro, edição, exclusão) e visualização em formato tabular de todos os perfis profissionais cadastrados.
 
 ## 3. Requistos do Sistema 
 
 ### 3.1 Requistos Funcionais (RF)
+RF01 - Listar Vagas: O sistema deve exibir as vagas disponíveis recuperadas da API, contendo imagem, título, descrição e salário.
+
+RF02 - Visualizar Detalhes da Vaga: O usuário deve ser capaz de visualizar o código (ID), nome, descrição e salário de cada vaga.
+
+RF03 - Cadastrar Currículo: O sistema deve permitir ao candidato preencher um formulário com seus dados pessoais e profissionais.
+
+RF04 - Persistência de Currículo: O sistema deve enviar os dados do formulário para o backend (API) e gerar um novo registro no banco de dados.
+
+RF05 - Limpeza de Formulário: Após o sucesso no envio do cadastro, o formulário deve ser limpo automaticamente para uma nova entra
+
 
 ### 3.2 Requsitos Não-Funcionais (RNF)
 
